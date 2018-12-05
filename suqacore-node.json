@@ -1,0 +1,31 @@
+{
+  "network": "livenet",
+  "port": 3001,
+  "services": [
+    "suqacored",
+    "insight-api",
+    "web"
+  ],
+  "servicesConfig": {
+    "suqacored": {
+          "spawn": {
+	        "datadir": "/home/rigadmin/.SUQA",
+            "exec": "/home/rigadmin/SUQA-CORE/src/SUQAd"
+          }
+    },
+    "insight-api": {
+      "routePrefix": "api",
+      "disableRateLimiter": true,
+      "enableCache": true
+    },
+    "fee": {
+      "rpc": {
+        "user": "suqarpc",
+        "pass": "BEAtr3Cw8yrTfTuic63CGcrKPfJj7UxZMmamYXapLGue",
+        "host": "127.0.0.1",
+        "protocol": "http",
+        "port": 8332
+      }
+    }
+  }
+}

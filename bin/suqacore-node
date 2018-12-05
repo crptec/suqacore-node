@@ -1,0 +1,4 @@
+#!/usr/bin/env node
+
+var suqacore = require('../lib/cli/suqacore');
+suqacore();
